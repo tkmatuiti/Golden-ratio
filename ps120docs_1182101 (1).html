@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ps120</title>
+</head>
+
+<body>
+  <p>1182101, Sotaro, Takabatake</p>
+  <hr>
+
+  <h2>Q1</h2>
+  This is a simple example of HTML programing
+  <br>
+  これは簡単なHTMLのプログラムの例です。
+  <h1>abc</h1>
+  <h2>abc</<h2>
+    <h3>abc</h3>
+    <h4>abc</h4>
+    <h5>abc</h5>
+    <h6>abc</h6>
+    <center>中央揃え</center>
+    <hr>
+
+    <h2>Q2</h2>
+    <table border="4">
+      <caption>Group</caption>
+      <tr>
+        <td>*</td>
+        <td>1</td>
+        <td>a</td>
+        <td>b</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>a</td>
+        <td>b</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td>a</td>
+        <td>b</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>b</td>
+        <td>b</td>
+        <td>1</td>
+        <td>a</td>
+      </tr>
+    </table>
+    <hr>
+
+    <h2>Q3</h2>
+    <p>宗太郎の自己紹介ページです</p>
+    <center><img src="http://www.musashi.ac.jp/albums/abm00000021.png"></center>
+    <hr width=80%>
+    <center>
+      <h3>宗太郎のプロフィール</h3>
+    </center>
+    <ul>
+      <li>学籍番号
+        <ul>
+          <li>1182101
+        </ul>
+      <li>名前
+        <ul>
+          <li>高畠　宗太郎
+        </ul>
+      <li>所属
+        <ul>
+          <li>経済学部
+            <ul>
+              <li>経営学科
+            </ul>
+        </ul>
+      <li>体育会/文化会/サークル/ゼミ
+        <ul>
+          <li>体育会卓球部/荻野ゼミ
+        </ul>
+      <li>趣味
+        <ol>
+          <li>手芸
+          <li>テニス
+          <li>ピアノ
+        </ol>
+      <li>講義に対する要望
+        <ul>
+          <li>テストも簡単でした。何か加点方式で、課題をいただきたいです。
+        </ul>
+        <hr width 50%>
+        <a href="http://www.musashi.ac.jp/">武蔵大学</a>へリンクします。
+        <hr>
+        <h2>Q4</h2>
+        <p>2の累乗計算</p>
+        <script language　=　"javascript">
+          var base = 1;
+          for (var i = 1; i <= 10; i++) {
+            base = base * 2;
+            document.write("2の", i, "乗は", base, "です.<br>");
+          }
+        </script>
+
+        <hr>
+
+        <h2>Midterm Exam</h2>
+        <p>総和の計算</p>
+        <script type="text/javascript">
+          var base = 1;
+          document.writeln('1の総和は', base, 'です。<br>');
+          for (var i = 2; i <= 10; i++) {
+            base = base + i;
+            document.writeln('1から', i, 'までの総和は', base, '<br>');
+          }
+        </script>
+        <hr>
+
+        <h2>Q5</h2>
+        <p>階乗の計算</p>
+        <script type="text/javascript">
+          var base = 1;
+          document.writeln('1! = ', base, '<br>');
+          for(var i = 2; i <= 10; i++){
+            base = base *i;
+            document.writeln(i,'! = ',base,'<br>');
+          }
+        </script>
+        <hr>
+        <h2>Q6</h2>
+        <p>フィボナッチ数と黄金比率</p>
+        <table border = 4>
+          <caption>フィボナッチ数と黄金比率</caption>
+          <tr>
+            <th>i</th><th>フィボナッチ級数</th><th>黄金比率</th>
+          </tr>
+
+        <script type="text/javascript">
+          var x = 0; //0番目を０とする
+          var y = 1;
+          var n = 64, z;
+
+          for(var i = 0; i < n; i++){
+            z = x + y;
+            document.writeln('<tr><td align =right>',i,'</td><td align = right>',x,'</td><td>',y/x,'</td></tr>');
+            x = y;
+            y = z;
+          }
+        </script>
+        </table>
+        <hr>
+        <h2>Q7</h2>
+        <p>公式の証明</p>
+        <table border = 4>
+          <caption>公式の証明</caption>
+          <tr>
+            <th>i</th>
+            <th>∑i^2</th>
+            <th>n(n+1)(2n+1)/6</th>
+            <th>∑i^3</th>
+            <th>(n(n+1)/2)^2</th>
+          </tr>
+          <script language = 'javascript'>
+            var n = 16, sum2 = 0, sum3 = 0;
+            for(var i = 1; i <= n; i++){
+              sum2 += (i * i);
+              sum3 += (i * i * i);
+              document.write('<tr align = right><td>', i,'</td><td>', sum2,
+              '</td><td>', i*(i+1)*(2*i+1)/6,'</td><td>', sum3,'</td><td>',
+              (i*(i+1)/2)*(i*(i+1)/2),'</td></tr>');
+            }
+          </script>
+        </table>
+        <hr>
+
+
+
+</body>
+
+</html>
